@@ -4,19 +4,15 @@
   </mat-drawer>
   <mat-drawer-content class="relative">
     <div class="flex ml-36 items-center p-8">
-      <img width="100" src="/assets/images/logo.png" class="mr-8" />
-      <h1 class="font-semibold text-4xl">
+      <img src="/assets/images/logo.png" class="mr-8 logo" />
+      <h1 class="font-semibold text-3xl 2xl:text-4xl">
         University of Management & Technology
       </h1>
     </div>
     <mat-divider></mat-divider>
-    <div class="m-20">
+    <div class="2xl:m-20 m-8">
       <router-outlet />
     </div>
-    <img
-      height="100"
-      class="absolute poweredBy"
-      src="/assets/images/powered.png"
-    />
+    <img class="fixed poweredBy" src="/assets/images/powered.png" />
   </mat-drawer-content>
 </mat-drawer-container>

@@ -19,6 +19,12 @@ body {
   --mdc-filled-button-container-color: black;
 }
 
+@media only screen and (max-width: 1400px) {
+  :root {
+    --mat-sidenav-container-width: 22%;
+  }
+}
+
 .mat-drawer-inner-container {
   overflow: hidden !important;
 }
