@@ -1,0 +1,122 @@
+<div>
+  <div class="flex justify-between m-8 mx-16 mb-4 items-center">
+    <h1 class="mb-0 font-semibold">{{ data.student }}</h1>
+    <img src="/assets/images/powered.png" />
+  </div>
+  <mat-divider></mat-divider>
+  <div class="flex m-8">
+    <div class="w-1/5 flex flex-col p-8">
+      <div class="flex gap-x-4 items-center py-4 verified mb-12 justify-center">
+        <img
+          class="guard-img"
+          width="50"
+          height="50"
+          src="/assets/images/guard.png"
+        />
+        <div class="flex flex-col justify-center">
+          <h2 class="font-semibold mb-0">Verified</h2>
+          <p class="mb-0">This is a valid degree</p>
+        </div>
+      </div>
+      <div class="mb-8">
+        <h2 class="font-semibold mb-0">ISSUE DATE</h2>
+        <p class="mb-8 mb-0">May 28, 2024</p>
+      </div>
+      <div class="mb-8">
+        <h2 class="font-semibold mb-0">ISSUER</h2>
+        <p class="mb-8 mb-0">University of Management & Technology</p>
+      </div>
+      <div class="mb-8">
+        <h2 class="font-semibold mb-0">TRANSACTION ID</h2>
+        <p class="mb-8 mb-0">d1412309as-d09km12398123asd</p>
+      </div>
+      <div class="mb-8">
+        <h2 class="font-semibold mb-0">ISSUER INFORMATION</h2>
+        <p class="mb-8 mb-0">12398asdk21308asd</p>
+        <p class="mb-8 mb-0">Smart Contract Address</p>
+      </div>
+      <div class="mb-8">
+        <h2 class="font-semibold mb-0">ISSUER DATA VERIFIED</h2>
+      </div>
+      <div
+        class="flex gap-x-4 items-center py-4 px-1 sign-verified mb-12 justify-center"
+      >
+        <img
+          class="guard-img"
+          width="50"
+          height="50"
+          src="/assets/images/verified.png"
+        />
+        <div>
+          <h2 class="font-semibold mb-0">Sign Verified</h2>
+          <p class="mb-0">Issuer sign is valid</p>
+        </div>
+      </div>
+    </div>
+    <div class="w-4/5 p-8">
+      <div class="border py-8">
+        <div class="p-4">
+          <div class="flex">
+            <div class="w-full flex justify-center items-center text-lg">
+              Enrollment No:
+              <span class="font-semibold"> &nbsp;{{ data.enrollment }}</span>
+            </div>
+            <div class="w-full flex justify-center">
+              <img height="150" width="150" src="/assets/images/logo.png" />
+            </div>
+            <div class="w-full flex justify-center items-center">
+              <img class="poweredBy" src="/assets/images/powered.png" />
+            </div>
+          </div>
+        </div>
+        <div class="mt-6">
+          <div class="text-4xl text-center">
+            University of Management & Technology
+          </div>
+          <div class="text-3xl text-center font-light mt-6">
+            BACHELOR OF ENGINEERING
+          </div>
+        </div>
+        <div class="px-24 mt-6">
+          <div class="text-lg">
+            This is to certify that
+            <span class="font-semibold underline">{{ data.student }} </span> has
+            completed the prescribed course of study for the Degree of Bachelor
+            of Engineering in
+            <span class="font-semibold underline">{{ data.department }}</span>
+            and has successfully passed the requisite examinations held in
+            <span class="font-semibold underline">2018</span>.
+          </div>
+          <div class="mt-6 text-lg">
+            The University hereby confers upon him/her the Degree of Bachelor of
+            Engineering in
+            <span class="font-semibold underline">{{ data.department }}</span>
+            at the Convocation of
+            <span class="font-semibold underline">{{ data.batch }}</span>
+          </div>
+          <div class="mt-6 text-lg">
+            This degree is cryptographically secured and verifiable via
+            blockchain technology
+          </div>
+        </div>
+        <div class="flex px-24 mt-12 items-center">
+          <div class="text-lg w-full">
+            <div class="font-semibold">Verified Certificate</div>
+            <div>Issued May 28, 2024</div>
+          </div>
+          <div class="text-lg w-full">
+            <div class="font-semibold">Verified Certificate</div>
+            <div>Issued May 28, 2024</div>
+          </div>
+          <div class="text-lg w-full">
+            <div class="font-semibold">Verified Certificate</div>
+            <div>Issued May 28, 2024</div>
+          </div>
+          <div class="text-lg w-full">
+            <img height="150" width="150" src="/assets/images/stamp.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

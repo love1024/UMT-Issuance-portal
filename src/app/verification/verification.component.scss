@@ -1,0 +1,21 @@
+.section {
+  background: url("/assets/images/UMT-bg-login.jpg");
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  flex: 1.5;
+}
+
+.login {
+  flex: 2;
+  background-color: white;
+}
+
+.poweredBy {
+  position: absolute;
+  bottom: 5rem;
+  left: calc(50% - 75px);
+}

@@ -1,0 +1,40 @@
+<div class="section flex">
+  <div class="overlay"></div>
+  <div class="login flex flex-col justify-center items-center relative">
+    <div class="flex flex-col items-center relative -top-8">
+      <img width="150" src="/assets/images/logo.png" />
+      <div class="flex items-center flex-col my-8">
+        <h1 class="font-semibold">UMT Issuance Portal</h1>
+        <p>Enter administrator credentials to login</p>
+      </div>
+      <form class="w-full" [formGroup]="form">
+        <mat-form-field appearance="outline" class="w-full">
+          <input
+            formControlName="email"
+            matInput
+            placeholder="email@domain.com"
+          />
+          <mat-error>Email is required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-full">
+          <input
+            matInput
+            placeholder="password"
+            type="password"
+            formControlName="password"
+          />
+          <mat-error>Password is required</mat-error>
+        </mat-form-field>
+      </form>
+      <button
+        class="mt-4"
+        (click)="onFormSubmit()"
+        mat-flat-button
+        color="primary"
+      >
+        Login to Issuance Portal
+      </button>
+    </div>
+    <img class="poweredBy" width="150" src="/assets/images/powered.png" />
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="section flex">
+  <div class="overlay"></div>
+  <div class="login flex flex-col justify-center items-center relative">
+    <div
+      *ngIf="!showSpinner; else loader"
+      class="flex flex-col items-center relative -top-8"
+    >
+      <img width="150" src="/assets/images/logo.png" />
+      <div class="flex items-center flex-col my-8">
+        <h1 class="font-semibold">UMT Universal Verification</h1>
+        <p>
+          Enter the certificate ID to verify your degree credentials from
+          blockchain
+        </p>
+      </div>
+      <form class="w-full" [formGroup]="form">
+        <mat-form-field appearance="outline" class="w-full">
+          <input
+            formControlName="email"
+            matInput
+            placeholder="Certificate ID"
+          />
+          <mat-error>Certificate ID is required</mat-error>
+        </mat-form-field>
+      </form>
+      <button
+        mat-flat-button
+        (click)="navigateTo('/verification-result')"
+        class="mt-4"
+      >
+        Verify Credentials
+      </button>
+      <p class="mt-24 italic text-xs">
+        Note: Kindly contact your university administrator if you haven’t
+        received certificate ID
+      </p>
+    </div>
+    <img
+      *ngIf="!showSpinner"
+      class="poweredBy"
+      width="150"
+      src="/assets/images/powered.png"
+    />
+  </div>
+</div>
+<ng-template #loader>
+  <div>
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>
