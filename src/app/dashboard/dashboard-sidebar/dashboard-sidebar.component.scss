@@ -1,3 +1,16 @@
 .mat-divider {
   border-top-color: white;
 }
+
+.icon {
+  height: 20px;
+  color: white;
+  fill: white;
+}
+
+.list > img {
+  flex: 1;
+}
+.list > a {
+  flex: 5;
+}
